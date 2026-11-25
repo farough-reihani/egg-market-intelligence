@@ -20,6 +20,7 @@
     return;
   }
   document.documentElement.dataset.authenticated = "true";
+  document.body.style.display = "";
   const label = document.getElementById("signedInAs");
   if (label) label.textContent = data.user.email || "کاربر واردشده";
   const logout = document.getElementById("logoutButton");
